@@ -134,6 +134,7 @@ Here's a **refreshed and engaging version** of **Step 5**, with a more dynamic a
 ---
 
 ## 🚀 **Step 5: Launching Your Bastion Host**
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/A%20better%20version%20of%20a%20bastion%20host%20setup%20process%20in%20AWS%2C%20showing%20a%20public%20subnet%20with%20a%20bastion%20host%20instance%2C%20private%20subnet%20with%20other%20instances%2C%20and%20secure%20SSH%20connection%20flow..png)
 
 A **Bastion Host** is your secure gateway to access instances within private subnets, typically by using SSH (or RDP). It acts as a jump server, where you connect first, then reach other instances behind the scenes. Let’s set up your bastion host in the public subnet!
 
@@ -225,7 +226,7 @@ By default, this subnet is assigned to the default **VPC Route Table** and **Net
 ---
 
 ### **Associate the Route Table with the Private Subnet**
-
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/vpc%20subnet%20accociate.png)
 1. Go back to **Subnets**, select your **Private-A** subnet.
 
 2. In the **Route Table** tab, click **Edit Route Table Association**.
@@ -246,6 +247,7 @@ Here’s a **reworked and more engaging version** of **Step 7**, designed to kee
 A **Network ACL (NACL)** is an added layer of security for your subnets. It acts like a firewall, controlling inbound and outbound traffic. While the default NACL allows all traffic, creating a custom one for your private subnet enhances control over network access.
 
 ### **Create the Network ACL**
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/created%20nacls.png)
 
 1. In the **VPC Dashboard**, go to the left navigation panel and click **Network ACLs** under **Security**.
 
@@ -282,6 +284,7 @@ You’ve successfully created a **custom Network ACL** and associated it with yo
 Now it’s time to add some **security rules** to your **Private Network ACL**. These rules will control both the inbound and outbound traffic to and from your private subnet, giving you granular control over what’s allowed and blocked.
 
 ### **Configure Inbound Rules**
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/inbound%20rule.png)
 
 1. In the **VPC Dashboard**, navigate to **Network ACLs** under **Security**.
 
@@ -309,7 +312,7 @@ Now it’s time to add some **security rules** to your **Private Network ACL**. 
 ---
 
 ### **Configure Outbound Rules**
-
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/outbound%20rule.png)
 1. With **Private-NACL** still selected, switch to the **Outbound Rules** tab and click **Edit Outbound Rules**.
 
 2. Add your first outbound rule:
@@ -511,7 +514,9 @@ Once the NAT Gateway is available, we’ll update the **Private Route Table** to
 * You've successfully **set up a NAT Gateway**, providing your **private EC2 instances** with secure, outbound internet access (e.g., for updates, downloads).
 * You’ve **updated the route table** for your **private subnet**, so now traffic destined for the internet will route through the NAT Gateway instead of the Internet Gateway.
 * Your private instances are now **securely isolated** from direct inbound internet access but still able to **reach the internet** for necessary tasks.
-***
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/securing-vpc%20INFRASTRUCTURE.png)
 
 
-[def]: https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/securing-vpc%20INFRASTRUCTURE.png
+
+
+****
