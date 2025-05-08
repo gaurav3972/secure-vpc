@@ -57,6 +57,7 @@ To begin defining your network infrastructure, you need to create a Virtual Priv
 3. On the left sidebar, select **Your VPCs**.
 
 4. Click the **Create VPC** button to start the VPC creation process.
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/vpc.png)
 
 5. In the **Create VPC** wizard, fill in the following details:
 
@@ -72,7 +73,7 @@ Here's a completely **reworded version** with a different tone and approach:
 ---
 
 ## 🌐 **Step 3: Set Up and Attach an Internet Gateway**
-
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/vpc.png)
 To enable your VPC to communicate with the internet, follow these steps to create and attach an **Internet Gateway**:
 
 1. In the **VPC Dashboard**, click **Internet Gateways** on the left panel.
@@ -88,7 +89,7 @@ Here’s a **more engaging and streamlined version** of **Step 4** with a fresh 
 ---
 
 ## 🌐 **Step 4: Setting Up a Public Subnet**
-
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/vpc%20configuration.png)
 A **Public Subnet** is essential for hosting resources that need direct access to the internet, like web servers or load balancers. Let's create and configure it for you!
 
 ### **Create the Public Subnet:**
