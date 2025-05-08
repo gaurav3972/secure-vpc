@@ -1,4 +1,5 @@
 # 🔐 **AWS Dual-Zone Secure VPC:**
+![](https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/securing-vpc%20INFRASTRUCTURE.png)
 
 **"AWS VPC Secure Architecture with Public and Private Subnets"**
 
@@ -510,3 +511,6 @@ Once the NAT Gateway is available, we’ll update the **Private Route Table** to
 * You’ve **updated the route table** for your **private subnet**, so now traffic destined for the internet will route through the NAT Gateway instead of the Internet Gateway.
 * Your private instances are now **securely isolated** from direct inbound internet access but still able to **reach the internet** for necessary tasks.
 ***
+
+
+[def]: https://github.com/gaurav3972/secure-vpc/blob/main/secure%20vpc/securing-vpc%20INFRASTRUCTURE.png
